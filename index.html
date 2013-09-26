@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
+
     <title>Effeckt.css</title>
+
     <meta name="description" content="UI-Less & Performant Transitions & Animations">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <link rel="stylesheet" href="css/demo.autoprefixed.css">
+
     <!-- Individual module CSS files here -->
     <!-- Should we combine or not combine? -->
     <link rel="stylesheet" href="css/effeckt.autoprefixed.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+  <div class="warning">Work in Progress! Not quite ready for prime-time</div>
+
   <nav class="effeckt-off-screen-nav" id="effeckt-off-screen-nav">
 
   <h4>
-    DISPLAY
+    Navigation
     <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
   </h4>
 
   <ul>
-    <li><a href="#0">ABCDEFG</a></li>
-    <li><a href="#0">HIJKLMN</a></li>
-    <li><a href="#0">OPQRUST</a></li>
-    <li><a href="#0">VXYZ</a></li>
-    <li><a href="#0">Phan Từ Huy</a></li>
-    <li><a href="#0">Lê Tân Nha</a></li>
+    <li><a href="#0">This</a></li>
+    <li><a href="#0">Little</a></li>
+    <li><a href="#0">Piggy</a></li>
+    <li><a href="#0">Went</a></li>
+    <li><a href="#0">To</a></li>
+    <li><a href="#0">Market</a></li>
   </ul>
 
 </nav>
 
+  <div class="effeckt-page-transition" id="effeckt-page-transition">
+
+    <div class="effeckt-page-transition-content">
+
+      <h2>Page Transition</h2>
+
+      <p>This is another page.</p>
+
+      <button class="page-transition-reset-button">Reset Transition</button>
+
+    </div>
+
+</div>
+
+
+    <!-- dialogs first is important for ~ selector -->
+  <div class="effeckt-modal-wrap" id="effeckt-modal-wrap"> <!-- for centering transform -->
+  <div class="effeckt-modal" id="effeckt-modal">
+    <h3>Modal Dialog</h3>
+    <div class="effeckt-modal-content">
+      <p>This is a modal window.</p>
+      <button class="effeckt-modal-close">Close me!</button>
+    </div>
+  </div>
+  </div>
   <!-- overlay coming after is important for ~ selector -->
   <div class="effeckt-overlay no-transitions" id="effeckt-overlay"></div>
 
   <div data-effeckt-page="page-1">
-    <header>
-  		<a href="#0" class="logo"></a>
-    	<a href="#0" class="icon-alert"></a>
-<!--
+
     <div class="page-wrap no-transitions" id="page-wrap">
 
       <h1>
@@ -75,7 +105,7 @@
       ...
     </span> -->
   </header>
-<!--
+
   <div class="button-group">
   <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-overlay">Left Overlay</button>
   <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-reveal">Left Reveal</button>
@@ -101,11 +131,7 @@
   <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-bounce" data-effeckt-needs-hide-class="true">Bottom Bounce</button>
   <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-bounce-out" data-effeckt-needs-hide-class="true">Bottom Bounce Out</button>
   <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-card-deck">Bottom Card Deck</button>
-  </div> -->
-  <footer>
-  	<a href="#0" class="main-menu"></a>
-    <button class="off-screen-nav-button sub-menu" data-effeckt-type="effeckt-off-screen-nav-bottom-overlay">&#9776;</button>
-  </footer>
+  </div>
 
 </div>
 
